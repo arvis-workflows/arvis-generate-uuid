@@ -1,0 +1,49 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+  "defaultIcon": "icon.png",
+  "category": "Tools",
+  "name": "arvis-generate-uuid",
+  "readme": "",
+  "creator": "mariusrumpf",
+  "version": "0.0.5",
+  "webAddress": "https://github.com/arvis-workflows/arvis-generate-uuid",
+  "description": "arvis Workflow - Generate UUIDs in v1 and v4",
+  "enabled": true,
+  "commands": [
+    {
+      "type": "scriptFilter",
+      "command": "uid",
+      "title": "Generate UUID",
+      "subtitle": "",
+      "scriptFilter": "node index.js \"{query}\"",
+      "runningSubtext": "Generating UUIDs...",
+      "withspace": true,
+      "argType": "optional",
+      "actions": [
+        {
+          "type": "cond",
+          "modifiers": "normal",
+          "if": {
+            "cond": "{var:action} === 'copy'",
+            "actions": {
+              "then": [
+                {
+                  "type": "clipboard",
+                  "modifiers": "normal",
+                  "text": "{query}"
+                }
+              ],
+              "else": [
+                {
+                  "type": "resetInput",
+                  "modifiers": "normal",
+                  "newInput": "{query}"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

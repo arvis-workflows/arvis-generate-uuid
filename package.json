@@ -1,0 +1,41 @@
+{
+  "name": "arvis-generate-uuid",
+  "version": "0.0.5",
+  "description": "arvis Workflow - Generate UUIDs in v1 and v4",
+  "license": "MIT",
+  "author": {
+    "name": "Marius Rumpf",
+    "email": "marius@mariusrumpf.de"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "test": "xo",
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup",
+    "prepublishOnly": "arvish-prepublish"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "arvis-workflow.json"
+  ],
+  "keywords": [
+    "uuid",
+    "uuid4",
+    "uuid1",
+    "uuidv1",
+    "uuidv4",
+    "arvis",
+    "arvis-workflow",
+    "arvish"
+  ],
+  "dependencies": {
+    "arvish": ">=0.5.2",
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {
+    "xo": "^0.39.1"
+  }
+}
