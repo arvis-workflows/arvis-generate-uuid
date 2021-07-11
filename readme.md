@@ -1,8 +1,5 @@
 # arvis-uuid
 
-<a href="https://github.com/MariusRumpf/arvis-uuid"><img alt="GitHub Actions status" src="https://github.com/MariusRumpf/arvis-uuid/workflows/CI/badge.svg"></a>
-
-
 > [arvis](https://www.arvisapp.com) workflow to generate UUIDs in v1 and v4
 
 <img src="screenshot.png" width="580">
@@ -31,3 +28,9 @@ In arvis, type `uid`, <kbd>⏎</kbd>
 MIT © [Marius Rumpf](https://github.com/mariusrumpf)
 
 <p align="center"><img src="icon.png" width="64"></p>
+
+## 🔗 This workflow is converted from [alfred-workflow](https://github.com/MariusRumpf/alfred-uuid).
+
+* Note that there might be some code change or different actions from the original workflow.
+
+* Marked original workflow's creator to author.
