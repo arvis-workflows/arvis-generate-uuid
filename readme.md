@@ -1,4 +1,4 @@
-# arvis-uuid
+# arvis-generate-uuid
 
 > [arvis](https://www.arvisapp.com) workflow to generate UUIDs in v1 and v4
 
@@ -7,11 +7,8 @@
 ## Install
 
 ```
-$ npm install --global arvis-uuid
+$ npm install --global arvis-generate-uuid
 ```
-
-*Requires [Node.js 10+](https://nodejs.org) and [arvis 3 or 4](https://www.arvisapp.com/) with the paid [Powerpack](https://www.arvisapp.com/powerpack/) upgrade.*
-
 
 ## Usage
 
